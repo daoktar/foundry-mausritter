@@ -1,5 +1,3 @@
-2024/07/28-12:00:02.668 1102c Log #3: 6 ops saved to Table #4 OK
-2024/07/28-12:00:02.668 1102c Archiving C:\Users\Futil\AppData\Local\FoundryVTT\Data\systems\mausritter\packs\conditions/000003.log: OK
-2024/07/28-12:00:02.668 1102c Table #4: 6 entries OK
-2024/07/28-12:00:02.670 1102c Archiving C:\Users\Futil\AppData\Local\FoundryVTT\Data\systems\mausritter\packs\conditions/MANIFEST-000002: OK
-2024/07/28-12:00:02.672 1102c **** Repaired leveldb C:\Users\Futil\AppData\Local\FoundryVTT\Data\systems\mausritter\packs\conditions; recovered 1 files; 877 bytes. Some data may have been lost. ****
+2026/07/19-21:27:44.454941 16ec47000 Recovering log #13
+2026/07/19-21:27:44.456424 16ec47000 Delete type=0 #13
+2026/07/19-21:27:44.456552 16ec47000 Delete type=3 #12

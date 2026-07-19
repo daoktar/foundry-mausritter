@@ -1,5 +1,3 @@
-2024/07/28-12:00:02.647 8f30 Log #3: 73 ops saved to Table #4 OK
-2024/07/28-12:00:02.647 8f30 Archiving C:\Users\Futil\AppData\Local\FoundryVTT\Data\systems\mausritter\packs\gear/000003.log: OK
-2024/07/28-12:00:02.647 8f30 Table #4: 73 entries OK
-2024/07/28-12:00:02.649 8f30 Archiving C:\Users\Futil\AppData\Local\FoundryVTT\Data\systems\mausritter\packs\gear/MANIFEST-000002: OK
-2024/07/28-12:00:02.653 8f30 **** Repaired leveldb C:\Users\Futil\AppData\Local\FoundryVTT\Data\systems\mausritter\packs\gear; recovered 1 files; 13425 bytes. Some data may have been lost. ****
+2026/07/19-21:27:44.464154 16ec47000 Recovering log #13
+2026/07/19-21:27:44.464838 16ec47000 Delete type=0 #13
+2026/07/19-21:27:44.464960 16ec47000 Delete type=3 #12
