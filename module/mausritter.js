@@ -26,15 +26,6 @@ Hooks.once('init', async function () {
   registerSettings();
 
 
-  /**
-   * Set an initiative formula for the system
-   * @type {String}
-   */
-  CONFIG.Combat.initiative = {
-    formula: "1d100",
-    decimals: 2
-  };
-
   // Define custom Entity classes
   CONFIG.Actor.documentClass = MausritterActor;
   CONFIG.Item.documentClass = MausritterItem;

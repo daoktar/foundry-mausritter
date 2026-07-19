@@ -1530,296 +1530,35 @@
   font-size: 0.85em;
 }
 
-/* Foundry dark application theme */
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter .window-content,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter form {
-  background: #191715 !important;
-  color: #f2e7d2 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter {
-  color: #f2e7d2 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter input,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter textarea,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter select {
-  background: #24211d !important;
-  color: #f2e7d2 !important;
-  border-color: #b89d6d !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter input::placeholder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter textarea::placeholder {
-  color: #a9977a !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter label,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .resource-label,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-control,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-controls a,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tab-select,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tabs .item,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .headerinputtext,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .headerinputfield,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .minmaxtext,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .littleLabel,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .bigLabel,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .darkGreyText {
-  color: #f2e7d2 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .current-max-label,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .greyText,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-bag-text,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-slot-header,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-slot-footer,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .rollmods {
-  color: #b7aa94 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .sheet-body,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .sheet-body .tab,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .sheet-body .tab .editor,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .editor,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .editor-content,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tox .tox-editor-container,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tox .tox-edit-area,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tox .tox-edit-area__iframe,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tox .tox-toolbar,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tox .tox-toolbar__primary {
-  background: #191715 !important;
-  color: #f2e7d2 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .header-border,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .creature-header-border,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .blockborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .blockborder-mini,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .minmaxwrapper,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .minmax-wrapper-noborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .valuewrapper {
-  background: linear-gradient(90deg, #37312a 0%, #37312a 34%, #24211d 20%, #24211d 100%) !important;
-  border-color: #b89d6d !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .creature-header,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .creature-header-grid,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .stresslabel,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .mainstatlabel,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .savebackground {
-  background: #0f0d0b !important;
-  color: #f2e7d2 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .portrait,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .portrait-creature,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-img {
-  background: #24211d !important;
-  border-color: #b89d6d !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .portrait img,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .portrait-creature img {
-  filter: brightness(0.82) sepia(0.12);
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-container {
-  background: #24211d !important;
-  border: 1px solid #5e4f37;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-bag-container,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-slot-dashed {
-  border-color: #8e806a !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card {
-  background: #2c2924 !important;
-  border-color: #d2b989 !important;
-  color: #f2e7d2 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-header,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-header-noborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-title,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-tag,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-desc,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-clear,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-clear-text,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-chat {
-  background: transparent !important;
-  color: #f2e7d2 !important;
-  border-color: #d2b989 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-damage,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-field-container,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-field {
-  background: #191715 !important;
-  color: #f2e7d2 !important;
-  border-color: #d2b989 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .item-card-image {
-  filter: invert(1) sepia(0.35) saturate(0.8) brightness(1.06);
-  opacity: 0.82;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .fa-circle {
-  color: #f2e7d2 !important;
-  background: transparent !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .fa-trash,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .fa-edit,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .fa-sync-alt,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .fa-plus {
-  color: #f0c56f !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .tabs,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .seperatorLine,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .slant,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .items-list .item,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .whiteline {
-  border-color: #b89d6d !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .chat-message .mausritter,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .message-content .mausritter,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .chat-message .mausritter .rollcontainer,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .message-content .mausritter .rollcontainer {
-  background: #191715 !important;
-  color: #f2e7d2 !important;
-  border-color: #b89d6d !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .window-content,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) form,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .sheet-body,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .sheet-body .tab,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .editor,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .editor-content {
-  background: #f6f3ed !important;
-  color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .header-border,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .creature-header-border,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .blockborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .blockborder-mini,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .minmaxwrapper,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .minmax-wrapper-noborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .valuewrapper {
-  background: linear-gradient(90deg, #ddd 0%, #ddd 34%, #fff 20%, #fff 100%) !important;
-  border-color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]),
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) label,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .resource-label,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-control,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-controls a,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .tab-select,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .tabs .item,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .headerinputtext,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .headerinputfield,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .minmaxtext,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .littleLabel,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .bigLabel,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .darkGreyText {
-  color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) input,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) textarea,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) select,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .sheet-header-maus .item-text,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .textarea-input,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .circle-input,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .smallcircle-input,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .square-input,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .mainstatmod-input {
-  background: rgb(230, 230, 230) !important;
-  color: rgb(22, 22, 22) !important;
-  border-color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .noborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .minmax-input,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) input.noborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) input.minmax-input {
-  background: transparent !important;
-  border-color: transparent !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .portrait,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .portrait-creature,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-img,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-container,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card {
-  background: #fff !important;
-  border-color: rgb(22, 22, 22) !important;
-  color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-image {
-  filter: none !important;
-  mix-blend-mode: normal !important;
-  opacity: 1 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .rollh1 {
-  background: #37312a !important;
-  color: #f2e7d2 !important;
-  border-color: #b89d6d !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .rollweaponh1 {
-  background: #0f0d0b !important;
-  color: #f2e7d2 !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .rollh2,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .rollattribute,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .roll-target,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .roll-result,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .roll-targetbox {
-  background: #24211d !important;
-  color: #f2e7d2 !important;
-  border-color: #b89d6d !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .roll-damage,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter .roll-damagebox {
-  color: #ff7f6d !important;
-  border-color: #ff7f6d !important;
-}
-
-/* Theme reconciliation. These final rules let an individual sheet set to Light
-   remain light even when the Foundry application theme is dark. */
-.application.mausritter {
+/* Mausritter theming. All colors flow from --maus-* variables: light is the
+   default, dark follows the global Foundry theme, and a per-sheet
+   theme-light/theme-dark class (set by applyDocumentSheetTheme) wins over the
+   global theme. */
+.mausritter {
   --maus-bg: #f6f3ed;
   --maus-panel: #fff;
   --maus-panel-muted: #ddd;
-  --maus-panel-soft: #e6e6e6;
+  --maus-panel-soft: #fff;
   --maus-text: rgb(22, 22, 22);
   --maus-muted: grey;
   --maus-border: rgb(22, 22, 22);
+  --maus-card-border: rgb(22, 22, 22);
   --maus-accent: rgb(22, 22, 22);
   --maus-label-bg: rgb(22, 22, 22);
   --maus-label-text: #fff;
   --maus-field-bg: rgb(230, 230, 230);
+  --maus-input-bg: transparent;
   --maus-chat-bg: #fff;
   --maus-damage: rgb(117, 0, 0);
   --maus-card-image-filter: none;
   --maus-card-image-blend: normal;
   --maus-card-image-opacity: 1;
+  --maus-portrait-filter: none;
 }
 
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:not(.theme-light):not(.maus-theme-light):not([data-theme="light"]):not([data-application-theme="light"]):not([data-maus-theme="light"]),
-.application.mausritter:is(.theme-dark, .maus-theme-dark, [data-theme="dark"], [data-application-theme="dark"], [data-maus-theme="dark"]) {
+:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter:not(.theme-light, .theme-light *),
+.application.mausritter.theme-dark,
+.application.mausritter.theme-dark .mausritter {
   --maus-bg: #191715;
   --maus-panel: #24211d;
   --maus-panel-muted: #37312a;
@@ -1827,210 +1566,222 @@
   --maus-text: #f2e7d2;
   --maus-muted: #b7aa94;
   --maus-border: #b89d6d;
+  --maus-card-border: #d2b989;
   --maus-accent: #f0c56f;
   --maus-label-bg: #0f0d0b;
   --maus-label-text: #f2e7d2;
   --maus-field-bg: #24211d;
+  --maus-input-bg: #24211d;
   --maus-chat-bg: #191715;
   --maus-damage: #ff7f6d;
   --maus-card-image-filter: invert(1) sepia(0.22) saturate(0.8) brightness(1.12);
   --maus-card-image-blend: screen;
   --maus-card-image-opacity: 0.84;
+  --maus-portrait-filter: brightness(0.82) sepia(0.12);
 }
 
 .application.mausritter .window-content,
-.application.mausritter form,
-.application.mausritter .sheet-body,
-.application.mausritter .sheet-body .tab,
-.application.mausritter .sheet-body .tab .editor,
-.application.mausritter .editor,
-.application.mausritter .editor-content,
-.application.mausritter .tox .tox-editor-container,
-.application.mausritter .tox .tox-edit-area,
-.application.mausritter .tox .tox-edit-area__iframe,
-.application.mausritter .tox .tox-toolbar,
-.application.mausritter .tox .tox-toolbar__primary {
+.mausritter form,
+.mausritter .sheet-body,
+.mausritter .sheet-body .tab,
+.mausritter .sheet-body .tab .editor,
+.mausritter .editor,
+.mausritter .editor-content,
+.mausritter .tox .tox-editor-container,
+.mausritter .tox .tox-edit-area,
+.mausritter .tox .tox-edit-area__iframe,
+.mausritter .tox .tox-toolbar,
+.mausritter .tox .tox-toolbar__primary {
   background: var(--maus-bg) !important;
   color: var(--maus-text) !important;
 }
 
-.application.mausritter,
-.application.mausritter label,
-.application.mausritter .resource-label,
-.application.mausritter .item-control,
-.application.mausritter .item-controls a,
-.application.mausritter .tab-select,
-.application.mausritter .tabs .item,
-.application.mausritter .headerinputtext,
-.application.mausritter .headerinputfield,
-.application.mausritter .minmaxtext,
-.application.mausritter .littleLabel,
-.application.mausritter .bigLabel,
-.application.mausritter .darkGreyText,
-.application.mausritter .item-card-header,
-.application.mausritter .item-card-header-noborder,
-.application.mausritter .item-card-title,
-.application.mausritter .item-card-tag,
-.application.mausritter .item-card-desc,
-.application.mausritter .item-card-clear,
-.application.mausritter .item-card-clear-text,
-.application.mausritter .item-card-chat,
-.application.mausritter .rollh2,
-.application.mausritter .rollattribute,
-.application.mausritter .roll-target,
-.application.mausritter .roll-result,
-.application.mausritter .roll-targetbox {
+.mausritter,
+.mausritter label,
+.mausritter .resource-label,
+.mausritter .item-control,
+.mausritter .item-controls a,
+.mausritter .tab-select,
+.mausritter .tabs .item,
+.mausritter .headerinputtext,
+.mausritter .headerinputfield,
+.mausritter .minmaxtext,
+.mausritter .littleLabel,
+.mausritter .bigLabel,
+.mausritter .darkGreyText,
+.mausritter .item-card-header,
+.mausritter .item-card-header-noborder,
+.mausritter .item-card-title,
+.mausritter .item-card-tag,
+.mausritter .item-card-desc,
+.mausritter .item-card-clear,
+.mausritter .item-card-clear-text,
+.mausritter .item-card-chat,
+.mausritter .rollh2,
+.mausritter .rollattribute,
+.mausritter .roll-target,
+.mausritter .roll-result,
+.mausritter .roll-targetbox {
   color: var(--maus-text) !important;
 }
 
-.application.mausritter .current-max-label,
-.application.mausritter .greyText,
-.application.mausritter .item-bag-text,
-.application.mausritter .item-slot-header,
-.application.mausritter .item-slot-footer,
-.application.mausritter .rollmods {
+.mausritter .current-max-label,
+.mausritter .greyText,
+.mausritter .item-bag-text,
+.mausritter .item-slot-header,
+.mausritter .item-slot-footer,
+.mausritter .rollmods {
   color: var(--maus-muted) !important;
 }
 
-.application.mausritter input,
-.application.mausritter textarea,
-.application.mausritter select {
+.mausritter input,
+.mausritter textarea,
+.mausritter select {
+  background: var(--maus-input-bg) !important;
   color: var(--maus-text) !important;
   border-color: var(--maus-border) !important;
 }
 
-.application.mausritter .noborder,
-.application.mausritter .minmax-input,
-.application.mausritter input.noborder,
-.application.mausritter input.minmax-input {
+.mausritter input::placeholder,
+.mausritter textarea::placeholder {
+  color: var(--maus-muted) !important;
+}
+
+.mausritter .noborder,
+.mausritter .minmax-input,
+.mausritter input.noborder,
+.mausritter input.minmax-input {
   background: transparent !important;
   border-color: transparent !important;
 }
 
-.application.mausritter .sheet-header-maus .item-text,
-.application.mausritter .textarea-input,
-.application.mausritter .circle-input,
-.application.mausritter .smallcircle-input,
-.application.mausritter .square-input,
-.application.mausritter .mainstatmod-input,
-.application.mausritter .item-card-field,
-.application.mausritter .item-card-field-container {
+.mausritter .sheet-header-maus .item-text,
+.mausritter .textarea-input,
+.mausritter .circle-input,
+.mausritter .smallcircle-input,
+.mausritter .square-input,
+.mausritter .mainstatmod-input,
+.mausritter .item-card-field,
+.mausritter .item-card-field-container {
   background: var(--maus-field-bg) !important;
   color: var(--maus-text) !important;
   border-color: var(--maus-border) !important;
 }
 
-.application.mausritter .header-border,
-.application.mausritter .creature-header-border,
-.application.mausritter .blockborder,
-.application.mausritter .blockborder-mini,
-.application.mausritter .minmaxwrapper,
-.application.mausritter .minmax-wrapper-noborder,
-.application.mausritter .valuewrapper {
+.mausritter .header-border,
+.mausritter .creature-header-border,
+.mausritter .blockborder,
+.mausritter .blockborder-mini,
+.mausritter .minmaxwrapper,
+.mausritter .minmax-wrapper-noborder,
+.mausritter .valuewrapper {
   background: linear-gradient(90deg, var(--maus-panel-muted) 0%, var(--maus-panel-muted) 34%, var(--maus-panel) 20%, var(--maus-panel) 100%) !important;
   border-color: var(--maus-border) !important;
 }
 
-.application.mausritter .creature-header,
-.application.mausritter .creature-header-grid,
-.application.mausritter .stresslabel,
-.application.mausritter .mainstatlabel,
-.application.mausritter .savebackground,
-.application.mausritter .rollweaponh1 {
+.mausritter .creature-header,
+.mausritter .creature-header-grid,
+.mausritter .stresslabel,
+.mausritter .mainstatlabel,
+.mausritter .savebackground,
+.mausritter .rollweaponh1 {
   background: var(--maus-label-bg) !important;
   color: var(--maus-label-text) !important;
 }
 
-.application.mausritter .portrait,
-.application.mausritter .portrait-creature,
-.application.mausritter .item-img,
-.application.mausritter .item-container,
-.application.mausritter .item-card {
+.mausritter .portrait,
+.mausritter .portrait-creature,
+.mausritter .item-img,
+.mausritter .item-container {
   background: var(--maus-panel) !important;
   border-color: var(--maus-border) !important;
   color: var(--maus-text) !important;
 }
 
-.application.mausritter .item-bag-container,
-.application.mausritter .item-slot-dashed,
-.application.mausritter .tabs,
-.application.mausritter .seperatorLine,
-.application.mausritter .slant,
-.application.mausritter .items-list .item,
-.application.mausritter .whiteline,
-.application.mausritter .rollh1,
-.application.mausritter .roll-target,
-.application.mausritter .roll-result,
-.application.mausritter .roll-targetbox {
+.mausritter .portrait img,
+.mausritter .portrait-creature img {
+  filter: var(--maus-portrait-filter);
+}
+
+.mausritter .item-card {
+  background: var(--maus-panel-soft) !important;
+  border-color: var(--maus-card-border) !important;
+  color: var(--maus-text) !important;
+}
+
+.mausritter .item-card-header,
+.mausritter .item-card-header-noborder,
+.mausritter .item-card-title,
+.mausritter .item-card-tag,
+.mausritter .item-card-desc,
+.mausritter .item-card-clear,
+.mausritter .item-card-clear-text,
+.mausritter .item-card-chat {
+  background: transparent !important;
+  border-color: var(--maus-card-border) !important;
+}
+
+.mausritter .item-bag-container,
+.mausritter .item-slot-dashed,
+.mausritter .tabs,
+.mausritter .seperatorLine,
+.mausritter .slant,
+.mausritter .items-list .item,
+.mausritter .whiteline,
+.mausritter .rollh1,
+.mausritter .roll-target,
+.mausritter .roll-result,
+.mausritter .roll-targetbox {
   border-color: var(--maus-border) !important;
 }
 
-.application.mausritter .item-card-image {
+.mausritter .item-card-image {
   background: transparent !important;
   filter: var(--maus-card-image-filter) !important;
   mix-blend-mode: var(--maus-card-image-blend) !important;
   opacity: var(--maus-card-image-opacity) !important;
 }
 
-.application.mausritter .item-card-damage,
-.application.mausritter .roll-damage,
-.application.mausritter .roll-damagebox {
+.mausritter .item-card-damage {
+  background: var(--maus-panel) !important;
+}
+
+.mausritter .item-card-damage,
+.mausritter .roll-damage,
+.mausritter .roll-damagebox {
   color: var(--maus-damage) !important;
   border-color: var(--maus-damage) !important;
 }
 
-.application.mausritter .fa-circle {
+.mausritter .fa-circle {
   color: var(--maus-text) !important;
   background: transparent !important;
 }
 
-.application.mausritter .fa-trash,
-.application.mausritter .fa-edit,
-.application.mausritter .fa-sync-alt,
-.application.mausritter .fa-plus {
+.mausritter .fa-trash,
+.mausritter .fa-edit,
+.mausritter .fa-sync-alt,
+.mausritter .fa-plus {
   color: var(--maus-accent) !important;
 }
 
-.application.mausritter .rollh1,
-.application.mausritter .rollh2,
-.application.mausritter .rollattribute,
-.application.mausritter .roll-target,
-.application.mausritter .roll-result,
-.application.mausritter .roll-targetbox {
+.mausritter .rollh1 {
+  background: var(--maus-panel-muted) !important;
+}
+
+.mausritter .rollh2,
+.mausritter .rollattribute,
+.mausritter .roll-target,
+.mausritter .roll-result,
+.mausritter .roll-targetbox {
   background: var(--maus-panel) !important;
 }
 
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-header,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-header-noborder,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-title,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-tag,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-desc,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-clear,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-clear-text,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-chat {
-  background: transparent !important;
-  color: rgb(22, 22, 22) !important;
-  border-color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-damage,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-field-container,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card-field {
-  background: #fff !important;
-  color: rgb(22, 22, 22) !important;
-  border-color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .application.mausritter:is(.theme-light, .maus-theme-light, [data-theme="light"], [data-application-theme="light"], [data-maus-theme="light"]) .item-card .fa-circle {
-  background: transparent !important;
-  color: rgb(22, 22, 22) !important;
-}
-
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .chat-message .mausritter,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .message-content .mausritter,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .chat-message .mausritter .rollcontainer,
-:is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .message-content .mausritter .rollcontainer {
-  background: #191715 !important;
-  color: #f2e7d2 !important;
-  border-color: #b89d6d !important;
+.chat-message .mausritter,
+.message-content .mausritter,
+.chat-message .mausritter .rollcontainer,
+.message-content .mausritter .rollcontainer {
+  background: var(--maus-chat-bg) !important;
+  color: var(--maus-text) !important;
+  border-color: var(--maus-border) !important;
 }

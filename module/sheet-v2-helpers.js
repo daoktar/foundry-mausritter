@@ -62,23 +62,10 @@ function activateTabs(element, initial) {
 }
 
 function applyDocumentSheetTheme(sheet) {
-  const root = sheet.element instanceof HTMLElement ? sheet.element : sheet.element[0];
-  const frame = root.closest(".application") ?? root;
   const apiTheme = foundry.applications.apps.DocumentSheetConfig.getSheetThemeForDocument(sheet.document);
-  const flagTheme = sheet.document.getFlag?.("core", "sheetTheme") ?? sheet.document.flags?.core?.sheetTheme;
-  const normalized = String(apiTheme || flagTheme || "").toLowerCase();
-
-  for (const element of new Set([root, frame])) {
-    element.classList.remove("theme-light", "theme-dark", "maus-theme-light", "maus-theme-dark");
-    delete element.dataset.applicationTheme;
-    delete element.dataset.mausTheme;
-
-    if (normalized === "light" || normalized === "dark") {
-      element.classList.add(`theme-${normalized}`, `maus-theme-${normalized}`);
-      element.dataset.applicationTheme = normalized;
-      element.dataset.mausTheme = normalized;
-    }
-  }
+  const theme = String(apiTheme || sheet.document.getFlag("core", "sheetTheme") || "").toLowerCase();
+  sheet.element.classList.remove("theme-light", "theme-dark");
+  if (theme === "light" || theme === "dark") sheet.element.classList.add(`theme-${theme}`);
 }
 
 function activateItemCardPositioning(sheet) {
@@ -115,11 +102,12 @@ function startItemCardPositioning(sheet, card, event) {
   };
   let position = getItemCardPosition(event, areaRect, offset);
 
+  card.style.zIndex = 1000;
+
   const onPointerMove = moveEvent => {
     moveEvent.preventDefault();
     position = getItemCardPosition(moveEvent, areaRect, offset);
     card.style.transform = `translate3d(${position.x}px, ${position.y}px, 0)`;
-    card.style.zIndex = position.x + position.y + 1000;
   };
 
   const onPointerUp = async moveEvent => {
@@ -129,19 +117,18 @@ function startItemCardPositioning(sheet, card, event) {
     card.removeEventListener("pointerup", onPointerUp);
     card.removeEventListener("pointercancel", onPointerUp);
 
-    const item = sheet.actor.getEmbeddedDocument("Item", itemId);
+    const item = sheet.actor.items.get(itemId);
     if (!item) return;
-
-    const itemData = item.toObject();
-    itemData.system.sheet = {
-      currentX: position.x,
-      currentY: position.y,
-      initialX: position.x,
-      initialY: position.y,
-      xOffset: position.x,
-      yOffset: position.y
-    };
-    await sheet.actor.updateEmbeddedDocuments("Item", [itemData]);
+    await item.update({
+      "system.sheet": {
+        currentX: position.x,
+        currentY: position.y,
+        initialX: position.x,
+        initialY: position.y,
+        xOffset: position.x,
+        yOffset: position.y
+      }
+    });
   };
 
   card.addEventListener("pointermove", onPointerMove);
@@ -159,16 +146,6 @@ function getItemCardPosition(event, areaRect, offset) {
   };
 }
 
-function getSheetDocument(sheet) {
-  return sheet.document ?? sheet.actor ?? sheet.item ?? sheet.object;
-}
-
-function getFormFromEvent(sheet, event) {
-  if (event.currentTarget instanceof HTMLFormElement) return event.currentTarget;
-  if (event.target instanceof HTMLElement && event.target.form instanceof HTMLFormElement) return event.target.form;
-  return sheet.form ?? sheet.element?.querySelector?.("form") ?? null;
-}
-
 function getControlUpdateData(control) {
   if (!control?.name || control.disabled) return null;
   if (control.type === "radio" && !control.checked) return null;
@@ -181,25 +158,17 @@ function getControlUpdateData(control) {
   return foundry.utils.expandObject({ [control.name]: value });
 }
 
-async function updateSheetFromForm(sheet, event, formData) {
-  const document = getSheetDocument(sheet);
-  const form = formData ? null : getFormFromEvent(sheet, event);
-  if (!document || (!formData && !form)) return;
-  const data = formData ?? new foundry.applications.ux.FormDataExtended(form);
-  const updateData = foundry.utils.expandObject(data.object);
-  return document.update(updateData, { diff: false });
-}
-
+// ponytail: deliberate per-control save instead of native whole-form submit —
+// whole-form FormDataExtended wiped fields on these legacy templates (b949786)
 async function updateSheetFromChangedControl(sheet, event) {
   const control = event.target instanceof HTMLElement
     ? event.target.closest("input[name], textarea[name], select[name]")
     : null;
   if (!control || control.classList.contains("item-input")) return;
 
-  const document = getSheetDocument(sheet);
   const updateData = getControlUpdateData(control);
-  if (!document || !updateData) return;
-  return document.update(updateData, { diff: false });
+  if (!updateData) return;
+  return sheet.document.update(updateData, { diff: false });
 }
 
 export class MausritterActorSheetV2 extends foundry.applications.sheets.ActorSheetV2 {
@@ -221,7 +190,7 @@ export class MausritterActorSheetV2 extends foundry.applications.sheets.ActorShe
   };
 
   static async onSubmitActorForm(event, form, formData) {
-    return updateSheetFromForm(this, event, formData);
+    return this.document.update(foundry.utils.expandObject(formData.object), { diff: false });
   }
 
   get template() {
@@ -261,10 +230,6 @@ export class MausritterActorSheetV2 extends foundry.applications.sheets.ActorShe
     return super._onChangeForm(formConfig, event);
   }
 
-  async _onSubmitForm(formConfig, event) {
-    return updateSheetFromForm(this, event);
-  }
-
   async _onDropItemCreate(itemData) {
     const items = Array.isArray(itemData) ? itemData : [itemData];
     return this.actor.createEmbeddedDocuments("Item", items);
@@ -292,7 +257,7 @@ export class MausritterItemSheetV2 extends foundry.applications.sheets.ItemSheet
   };
 
   static async onSubmitItemForm(event, form, formData) {
-    return updateSheetFromForm(this, event, formData);
+    return this.document.update(foundry.utils.expandObject(formData.object), { diff: false });
   }
 
   async _prepareContext(options) {
@@ -323,10 +288,6 @@ export class MausritterItemSheetV2 extends foundry.applications.sheets.ItemSheet
   _onChangeForm(formConfig, event) {
     if (formConfig.submitOnChange) return updateSheetFromChangedControl(this, event);
     return super._onChangeForm(formConfig, event);
-  }
-
-  async _onSubmitForm(formConfig, event) {
-    return updateSheetFromForm(this, event);
   }
 
   activateListeners(html) {}
