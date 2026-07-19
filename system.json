@@ -149,6 +149,12 @@
       "name": "Česky (Czech)",
       "path": "lang/cs.json",
       "flags": {}
+    },
+    {
+      "lang": "ru",
+      "name": "Русский (Russian)",
+      "path": "lang/ru.json",
+      "flags": {}
     }
   ],
   "grid": {
