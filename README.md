@@ -16,7 +16,7 @@ Mausritter can be purchased here: https://mausritter.com/
 2. Click **Install System**.
 3. Paste this URL into the **Manifest URL** field at the bottom:
    ```
-   https://raw.githubusercontent.com/daoktar/foundry-mausritter/v14+dark/system.json
+   https://raw.githubusercontent.com/daoktar/foundry-mausritter/v14/system.json
    ```
 4. Click **Install**.
 5. Create a world: **Game Worlds → Create World → Game System: Mausritter**.
@@ -26,13 +26,12 @@ Updates are delivered through the same manifest: **Game Systems → Mausritter �
 ## Branches
 | Branch | Foundry | Notes |
 |--------|---------|-------|
-| `v14+dark` | v14 | Recommended. ApplicationV2 sheets, dark theme support, per-sheet light/dark override |
-| `v14` | v14 | Same content as `v14+dark`, kept as a separate install channel |
+| `v14` | v14 | Recommended. ApplicationV2 sheets, dark theme support, per-sheet light/dark override |
 | `v10` | v10-v12 | Legacy, pre-ApplicationV2 |
 
 ## Manual install
-1. Download the zip: `https://github.com/daoktar/foundry-mausritter/archive/refs/heads/v14+dark.zip`
-2. Extract it into your Foundry userdata folder as `Data/systems/mausritter` (the folder must contain `system.json` at its root — remove the `foundry-mausritter-v14-dark` wrapper folder from the archive).
+1. Download the zip: `https://github.com/daoktar/foundry-mausritter/archive/refs/heads/v14.zip`
+2. Extract it into your Foundry userdata folder as `Data/systems/mausritter` (the folder must contain `system.json` at its root — remove the `foundry-mausritter-v14` wrapper folder from the archive).
 3. Restart Foundry. Manual installs do not auto-update — repeat these steps to update, or reinstall via the manifest URL above.
 
 ## Theme
