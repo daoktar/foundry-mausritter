@@ -1562,6 +1562,8 @@
   --maus-card-image-blend: normal;
   --maus-card-image-opacity: 1;
   --maus-portrait-filter: none;
+  /* Core default icons (mystery-man.svg etc) are white - invert on light bg */
+  --maus-svg-icon-filter: invert(1);
 }
 
 :is(html.theme-dark, body.theme-dark, .theme-dark, [data-theme="dark"]) .mausritter:not(.theme-light, .theme-light *),
@@ -1586,6 +1588,7 @@
   --maus-card-image-blend: screen;
   --maus-card-image-opacity: 0.84;
   --maus-portrait-filter: brightness(0.82) sepia(0.12);
+  --maus-svg-icon-filter: none;
 }
 
 .application.mausritter .window-content,
@@ -1709,6 +1712,11 @@
 .mausritter .portrait img,
 .mausritter .portrait-creature img {
   filter: var(--maus-portrait-filter);
+}
+
+.mausritter .portrait img[src$=".svg"],
+.mausritter .portrait-creature img[src$=".svg"] {
+  filter: var(--maus-svg-icon-filter);
 }
 
 .mausritter .item-card {

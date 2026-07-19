@@ -68,6 +68,20 @@ function applyDocumentSheetTheme(sheet) {
   if (theme === "light" || theme === "dark") sheet.element.classList.add(`theme-${theme}`);
 }
 
+function activateImageEditing(sheet) {
+  if (!sheet.isEditable) return;
+  for (const img of sheet.element.querySelectorAll("img[data-edit]")) {
+    img.addEventListener("click", () => {
+      const attr = img.dataset.edit;
+      new foundry.applications.apps.FilePicker.implementation({
+        type: "image",
+        current: foundry.utils.getProperty(sheet.document, attr),
+        callback: path => sheet.document.update({ [attr]: path })
+      }).browse();
+    });
+  }
+}
+
 function activateItemCardPositioning(sheet) {
   if (!sheet.isEditable) return;
 
@@ -223,6 +237,7 @@ export class MausritterActorSheetV2 extends foundry.applications.sheets.ActorShe
     activateTabs(this.element, this.constructor.DEFAULT_OPTIONS.initialTab);
     this.activateListeners($(this.element));
     activateItemCardPositioning(this);
+    activateImageEditing(this);
   }
 
   _onChangeForm(formConfig, event) {
@@ -283,6 +298,7 @@ export class MausritterItemSheetV2 extends foundry.applications.sheets.ItemSheet
     applyDocumentSheetTheme(this);
     activateTabs(this.element, this.constructor.DEFAULT_OPTIONS.initialTab);
     this.activateListeners($(this.element));
+    activateImageEditing(this);
   }
 
   _onChangeForm(formConfig, event) {
