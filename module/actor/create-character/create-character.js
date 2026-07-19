@@ -10,7 +10,7 @@ import {
 } from "./data.js";
 import {showCreateCharacterDialog} from "./create-character-dialog.js";
 import {showWeaponChoiceDialog} from "./weapon-choice.js";
-import {addItem, attrRoll, drawFromTable, getItemFromFoundry} from "./foundry-clinet.js";
+import {addItem, attrRoll, drawFromTable, getItemFromFoundry} from "./foundry-client.js";
 import {showAdditionalItemsInfoDialog} from "./additional-items-info-dialog.js";
 import {showAdditionalItemsChoiceDialog} from "./additional-items-dialog-choice.js";
 
