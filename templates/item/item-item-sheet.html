@@ -48,7 +48,7 @@
 
         {{!-- Description Tab --}}
         <div class="tab" data-group="primary" data-tab="description">
-            {{editor system.description target="system.description" button=true owner=owner editable=true}}
+            <prose-mirror name="system.description" value="{{system.description}}" toggled document-uuid="{{document.uuid}}"></prose-mirror>
         </div>
 
         {{!-- Attributes Tab --}}

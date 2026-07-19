@@ -51,6 +51,14 @@
   /* font-family: "Montserrat", "Arial Black", sans-serif; */
 }
 
+.application.mausritter {
+  font-size: var(--font-size-14, 14px);
+}
+
+.application.mausritter .window-content {
+  overflow-y: auto;
+}
+
 .application.mausritter .window-content,
 .application.mausritter form {
   background: #f6f3ed;

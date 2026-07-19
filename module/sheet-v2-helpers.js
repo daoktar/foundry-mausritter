@@ -162,7 +162,7 @@ function getControlUpdateData(control) {
 // whole-form FormDataExtended wiped fields on these legacy templates (b949786)
 async function updateSheetFromChangedControl(sheet, event) {
   const control = event.target instanceof HTMLElement
-    ? event.target.closest("input[name], textarea[name], select[name]")
+    ? event.target.closest("input[name], textarea[name], select[name], prose-mirror[name]")
     : null;
   if (!control || control.classList.contains("item-input")) return;
 
