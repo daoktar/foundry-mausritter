@@ -27,7 +27,7 @@ Updates are delivered through the same manifest: **Game Systems â†’ Mausritter â
 | Branch | Foundry | Notes |
 |--------|---------|-------|
 | `v14+dark` | v14 | Recommended. ApplicationV2 sheets, dark theme support, per-sheet light/dark override |
-| `v14` | v14 | Same migration without the dark theme work |
+| `v14` | v14 | Same content as `v14+dark`, kept as a separate install channel |
 | `v10` | v10-v12 | Legacy, pre-ApplicationV2 |
 
 ## Manual install
