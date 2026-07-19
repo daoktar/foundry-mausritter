@@ -73,6 +73,28 @@ For Skills, create a new macro with this
 game.mausritter.rollStatMacro();
 ```
 
+# AI-generated content
+
+<details>
+<summary>This system includes a small amount of optional AI-generated art — click to expand for full disclosure</summary>
+
+Four bestiary creatures — **Owl, Spider, Faerie and Ghost** — have no illustration anywhere in the official Mausritter books (the books only depict mice, cats, snakes, centipedes, rats and frogs). Their portrait/token images are therefore **AI-generated**, produced with an image-generation model prompted to match Isaac Williams' grayscale pencil-sketch style, then hand-curated and processed to sit alongside the official portraits.
+
+Nothing else in the system is AI-generated:
+- **Weapon, item, spell and armour icons** — official art by Isaac Williams (CC-BY).
+- **Condition-card faces** and the **Cat, Snake, Mouse and Frog** portraits — cropped from the official rulebook and the item/condition sheets.
+- **Rat, Crow and Centipede** portraits — official sample art (used with permission).
+
+### How to turn it off
+The AI art is **optional and on by default**. To disable it:
+
+> **Game Settings → Configure Settings → System Settings → Mausritter → _Use AI-generated creature art_** → uncheck.
+
+When it is off, newly-created **Owl / Spider / Faerie / Ghost** actors fall back to Foundry's default icon (`icons/svg/mystery-man.svg`) instead of the AI image. The setting is world-scoped and applies to creatures created *after* it is changed — creatures already placed keep their current image (re-import them, or swap the portrait manually, to update).
+
+The four AI files live in `images/creatures/` (`owl.png`, `spider.png`, `faerie.png`, `ghost.png`); delete or replace them with your own art at any time.
+</details>
+
 # Screenshots
 ![Alt text](https://i.imgur.com/4PYBj8X.jpg "Game Example")
 

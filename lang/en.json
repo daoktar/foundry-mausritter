@@ -98,5 +98,8 @@
     "Maus.RollTarget" : "Target",
     "Maus.RollAD" : "A/D",
     "Maus.RollMiscast" : "Miscast",
-    "Maus.RollMiscastDesc" : "Take [[/r !miscast!d6]] Will Damage <br/> Then, make a will save, taking the <i>drained</i> condition on a failure."
+    "Maus.RollMiscastDesc" : "Take [[/r !miscast!d6]] Will Damage <br/> Then, make a will save, taking the <i>drained</i> condition on a failure.",
+
+    "Maus.SettingAIArtName" : "Use AI-generated creature art",
+    "Maus.SettingAIArtHint" : "Owl, Spider, Faerie and Ghost have no illustration in the Mausritter books, so their portraits and tokens use AI-generated pencil art. Turn this off to fall back to the default icon for newly-created creatures."
 }
