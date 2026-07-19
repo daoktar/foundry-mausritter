@@ -10,7 +10,8 @@ import { MausritterItemSheet } from "./item/item-sheet.js";
 import { registerDataModels } from "./data-models.js";
 
 import {
-  registerSettings
+  registerSettings,
+  AI_CREATURE_ART
 } from "./settings.js";
 import {autoCreateCharacter} from "./actor/create-character/create-character.js";
 
@@ -114,6 +115,15 @@ Hooks.on("preCreateActor", (document, createData, options, userId) => {
   if (document.type == "character") {
     prototypeToken.sight = { enabled: true };
     prototypeToken.actorLink = true;
+  }
+
+  // Optional AI-generated creature art: fall back to the default icon when disabled
+  if (document.type == "creature" && !game.settings.get("mausritter", "aiCreatureArt")) {
+    const fallback = AI_CREATURE_ART[document.img];
+    if (fallback) {
+      prototypeToken.texture = { src: fallback };
+      document.updateSource({ img: fallback });
+    }
   }
 
   document.updateSource({ prototypeToken });
