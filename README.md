@@ -5,6 +5,43 @@ Mausritter can be purchased here: https://mausritter.com/
 - The official game Weapon, Item, and Spell Icons by Isaac Williams are licensed under CC-BY.
 - The sample Rat portrait from the official book was allowed to be used with permission from Isaac Williams
 ```
+# Installation
+
+## Requirements
+- Foundry VTT **v14** (this branch's `system.json` declares `minimum: 14`). Self-hosted servers need Node 24 for Foundry v14.
+- For older Foundry versions use the upstream legacy branch: [DiegoF824/foundry-mausritter `v10`](https://github.com/DiegoF824/foundry-mausritter/tree/v10).
+
+## Install via manifest URL (recommended)
+1. Open Foundry and go to **Game Systems** (Setup screen).
+2. Click **Install System**.
+3. Paste this URL into the **Manifest URL** field at the bottom:
+   ```
+   https://raw.githubusercontent.com/daoktar/foundry-mausritter/v14+dark/system.json
+   ```
+4. Click **Install**.
+5. Create a world: **Game Worlds → Create World → Game System: Mausritter**.
+
+Updates are delivered through the same manifest: **Game Systems → Mausritter → Update**.
+
+## Branches
+| Branch | Foundry | Notes |
+|--------|---------|-------|
+| `v14+dark` | v14 | Recommended. ApplicationV2 sheets, dark theme support, per-sheet light/dark override |
+| `v14` | v14 | Same migration without the dark theme work |
+| `v10` | v10-v12 | Legacy, pre-ApplicationV2 |
+
+## Manual install
+1. Download the zip: `https://github.com/daoktar/foundry-mausritter/archive/refs/heads/v14+dark.zip`
+2. Extract it into your Foundry userdata folder as `Data/systems/mausritter` (the folder must contain `system.json` at its root — remove the `foundry-mausritter-v14-dark` wrapper folder from the archive).
+3. Restart Foundry. Manual installs do not auto-update — repeat these steps to update, or reinstall via the manifest URL above.
+
+## Theme
+Sheets follow the Foundry application theme (light/dark). A per-sheet override is available via **Sheet Configuration → Theme** on any actor or item sheet.
+
+## Troubleshooting
+- **System not listed after manual install** — `system.json` is not at `Data/systems/mausritter/system.json`; check the folder nesting.
+- **Installed from the old upstream manifest** — updates then come from `DiegoF824/foundry-mausritter`; reinstall using the manifest URL above to switch to this fork.
+
 # Features:
 ## Styled character sheets
 Character, Creature, and NPC sheets were built to resemble the standard print sheets.
