@@ -1,8 +1,8 @@
 {
-  "title": "Mausritter",
+  "title": "Mausritter v14",
   "type": "system",
   "description": "The unofficial Mausritter system for FoundryVTT.",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "esmodules": [
     "module/mausritter.js"
   ],
@@ -163,7 +163,8 @@
   "id": "mausritter",
   "authors": [
     {
-      "name": "Futilrevenge",
+      "name": "daoktar",
+      "url": "https://github.com/daoktar",
       "flags": {}
     }
   ],
