@@ -7,6 +7,7 @@ import { MausritterStorageSheet } from "./actor/storage-sheet.js";
 
 import { MausritterItem } from "./item/item.js";
 import { MausritterItemSheet } from "./item/item-sheet.js";
+import { registerDataModels } from "./data-models.js";
 
 import {
   registerSettings
@@ -29,6 +30,7 @@ Hooks.once('init', async function () {
   // Define custom Entity classes
   CONFIG.Actor.documentClass = MausritterActor;
   CONFIG.Item.documentClass = MausritterItem;
+  registerDataModels();
  
   // Define table data for character generator
   CONFIG.MAUSRITTER = {}

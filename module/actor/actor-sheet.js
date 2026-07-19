@@ -149,7 +149,7 @@ export class MausritterActorSheet extends MausritterActorSheetV2 {
             creatableItems.forEach(type => selectList += "<option value='" + type + "'>" + type + "</option>")
 
             const formData = await foundry.applications.api.DialogV2.input({
-                window: { title: "Select Stat" },
+                window: { title: "Select Item Type" },
                 content: "<h2> Item Type </h2> <select style='margin-bottom:10px;'name='type' id='type'> " + selectList + "</select> <br/>",
                 ok: { label: "Create" },
                 rejectClose: false
