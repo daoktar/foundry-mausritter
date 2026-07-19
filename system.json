@@ -156,9 +156,9 @@
     "distance": 1
   },
   "primaryTokenAttribute": "health",
-  "url": "https://github.com/DiegoF824/foundry-mausritter",
-  "manifest": "https://raw.githubusercontent.com/DiegoF824/foundry-mausritter/v14+dark/system.json",
-  "download": "https://github.com/DiegoF824/foundry-mausritter/archive/refs/heads/v14+dark.zip",
+  "url": "https://github.com/daoktar/foundry-mausritter",
+  "manifest": "https://raw.githubusercontent.com/daoktar/foundry-mausritter/v14+dark/system.json",
+  "download": "https://github.com/daoktar/foundry-mausritter/archive/refs/heads/v14+dark.zip",
   "license": "LICENSE.txt",
   "id": "mausritter",
   "authors": [
