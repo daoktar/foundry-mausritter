@@ -110,7 +110,7 @@ Hooks.on("preCreateActor", (document, createData, options, userId) => {
   };
 
   if (document.type == "character") {
-    prototypeToken.vision = true;
+    prototypeToken.sight = { enabled: true };
     prototypeToken.actorLink = true;
   }
 

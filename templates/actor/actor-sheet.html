@@ -98,7 +98,7 @@
         </div>
 
         <div class="creaturedescription">
-          <prose-mirror name="system.biography" value="{{system.biography}}" toggled document-uuid="{{document.uuid}}"></prose-mirror>
+          <prose-mirror name="system.biography" value="{{system.biography}}" toggled document-uuid="{{document.uuid}}">{{{system.biography}}}</prose-mirror>
         </div>
 
       </div>
@@ -208,7 +208,7 @@
   <section class="sheet-body">
     {{!-- Notes Tab --}}
     <div class="tab biography" data-group="primary" data-tab="notes">
-      <prose-mirror name="system.notes" value="{{system.notes}}" toggled document-uuid="{{document.uuid}}"></prose-mirror>
+      <prose-mirror name="system.notes" value="{{system.notes}}" toggled document-uuid="{{document.uuid}}">{{{system.notes}}}</prose-mirror>
     </div>
     {{!-- Owned Items Tab --}}
     <div class="tab items" data-group="primary" data-tab="items">

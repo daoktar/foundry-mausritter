@@ -353,7 +353,7 @@
   padding-left: 1em;
   border: 4px solid #111;
   border-radius: 3em;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: bold;
   text-align: left;
 }
@@ -504,7 +504,7 @@
   padding: 0.1rem;
   color: white;
   font-family: "Montserrat", "Arial Black", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;
@@ -517,7 +517,7 @@
   padding: 0;
   border: 4px solid #111;
   border-radius: 3em;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
 }
@@ -530,7 +530,7 @@
   border: 2px solid rgb(129, 129, 129);
   border-radius: 0.1em 1em 0.11em;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.85em;
   font-weight: bold;
   text-align: center;
   margin-left: -22px;
@@ -540,7 +540,7 @@
 .mausritter .mainstatmod-title {
   position: relative;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.7em;
   color: rgb(77, 77, 77);
   line-height: 1;
   text-align: center;
@@ -559,7 +559,7 @@
 }
 
 .mausritter .sizelarge{
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 .mausritter .statblock{
@@ -576,7 +576,7 @@
   margin: auto;
   border: 0px solid rgb(77, 77, 77);
   color: rgb(77, 77, 77);
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: bold;
   text-align: center;
   font-family: 'Germania One', Garamond;
@@ -646,7 +646,7 @@
 .mausritter .minmax-input {
   margin: auto;
   border: 0px solid #111;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: bold;
   text-align: center;
   font-family: 'Germania One', Garamond;
@@ -657,7 +657,7 @@
 
 .mausritter .minmaxtext{
   font-family: 'Germania One', Garamond;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -667,7 +667,7 @@
 
 .mausritter .littleLabel{
   font-family: 'Germania One', Garamond;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   font-weight: bold;
   text-align: center;
   margin: auto;
@@ -676,7 +676,7 @@
 
 .mausritter .bigLabel{
   font-family: 'Germania One', Garamond;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: bold;
   text-align: center;
   margin: auto;
@@ -749,7 +749,7 @@
   padding: 0.5rem;
   color: white;
   font-family: "Montserrat", "Arial Black", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;
@@ -762,7 +762,7 @@
   padding: 0;
   border: 4px solid #111;
   border-radius: 3em;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: center;
 }
@@ -774,7 +774,7 @@
   padding-top: 2px;
   border: 2px solid #111;
   border-radius: 0.8em;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   /* font-weight: bold; */
   background: white;
   resize: none;
@@ -790,7 +790,7 @@
   border: 4px solid #111;
   background-color: #fff;
   border-radius: 0.5em;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: bold;
   text-align: center;
 }
@@ -800,7 +800,7 @@
   width: 100%;
   color: white;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -886,7 +886,7 @@
   height: auto;
   width: 100%;
   padding-left: 13px;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   font-weight: bold;
   color:white;
   font-family: "Century Gothic", "Diadact Gothic", sans-serif;
@@ -895,7 +895,7 @@
 .mausritter .creaturestat {
   margin-left: 4px;
   height: auto;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   text-transform: uppercase;
   font-family: "Century Gothic", "Diadact Gothic", sans-serif;
   color:white;
@@ -922,7 +922,7 @@
 
 .mausritter .creature-ability-title {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   text-transform: uppercase;
   font-family: "Century Gothic", "Diadact Gothic", sans-serif;
   color:white;
@@ -931,7 +931,7 @@
 
 .mausritter .creature-ability-text {
   height: auto;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-family: "Century Gothic", "Diadact Gothic", sans-serif;
   color:white;
 }
@@ -960,7 +960,7 @@
 .mausritter .headerinputtext {
   color: rgb(22, 22, 22);
   font-family: 'Germania One', Garamond;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   font-weight: bold;
   text-align: center;
   margin-top: 3px;
@@ -968,7 +968,7 @@
 }
 
 .mausritter .headerinputtext.actorname {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .mausritter .headerinputfield {
@@ -977,7 +977,7 @@
   margin: auto;
   padding: 2px;
   /* background-color: rgb(240,240,240); */
-  font-size: 1rem;
+  font-size: 1em;
   font-family: 'Germania One', Garamond;
   flex: 1.9;
 }
@@ -1040,7 +1040,7 @@
   width: 107%;
   margin-top: 0;
   margin-left: -9px;
-  font-size: 1.9rem;
+  font-size: 1.9em;
   border-bottom: 2px solid rgb(22, 22, 22);
   background: rgba(221,221,221,1);
   padding: 5px;
@@ -1052,7 +1052,7 @@
   margin-top: 0;
   margin-left: -9px;
   margin-right: -9px;
-  font-size: 2rem;
+  font-size: 2em;
   background: rgb(22, 22, 22);
   /* border-bottom-right-radius: 1.5em; */
   color: white;
@@ -1063,7 +1063,7 @@
 }
 
 .mausritter .rollh2 {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: normal;
   line-height: 1;
   text-align: center;
@@ -1072,7 +1072,7 @@
 }
 
 .mausritter .rollmods {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: normal;
   text-transform: uppercase;
   /* line-height: 1; */
@@ -1088,7 +1088,7 @@
   padding: 0.5rem;
   color: black;
   font-family: 'Germania One', Garamond;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   text-align: center;
 }
 
@@ -1104,7 +1104,7 @@
   padding: 8px;
   border: 2px solid #111;
   border-radius: 0.5em;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   text-align: center;
   grid-column: 2/span 2;
 }
@@ -1116,7 +1116,7 @@
   align-items: center;
   gap: 2.5rem;
   padding: 0.8rem;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   background: white;
   border-radius: 1.5rem;
   color: #111;
@@ -1129,13 +1129,13 @@
   padding: 2px;
   border: 2px solid #111;
   border-radius: 0.3em;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   text-align: center;
   margin-right: 0px;
 }
 
 .mausritter .roll-damage {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   line-height: 1;
   text-align: center;
   margin-top: 4px;
@@ -1149,7 +1149,7 @@
   padding: 4px;
   border: 2px solid rgb(117, 0, 0);
   border-radius: 0.5em;
-  font-size: 2rem;
+  font-size: 2em;
   text-align: center;
   grid-column: 2/span 2;
   color: rgb(117, 0, 0);
@@ -1385,7 +1385,7 @@
   width: 85%;
   margin: auto;
   background-color: rgb(240,240,240);
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-family: 'Germania One', Garamond;
   border: 2px solid rgb(22, 22, 22);
   position: absolute;
@@ -1503,22 +1503,22 @@
 .mausritter .tab-select:lang(cs),
 .mausritter .minmaxtext:lang(cs),
 .mausritter .bigLabel:lang(cs) {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   text-transform: capitalize;
 }
 
 .mausritter .headerinputtext:lang(cs),
 .mausritter .tabs .item:lang(cs) {
-  font-size: 1.125rem;
+  font-size: 1.125em;
   text-transform: capitalize;
 }
 
 .mausritter .littleLabel:lang(cs) {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .mausritter .headerinputtext.actorname:lang(cs) {
-  font-size: 2.125rem;
+  font-size: 2.125em;
 }
 
 .mausritter .item-slot-header:lang(cs),
